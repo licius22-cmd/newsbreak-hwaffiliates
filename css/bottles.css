@@ -1,0 +1,433 @@
+/* ===== BOTTLES SECTION ===== */
+.bottles-section {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.bottle-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 3px solid #E52990;
+    box-shadow: 0 4px 20px rgba(229, 41, 144, .18);
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 22px;
+}
+
+.card-left {
+    flex: 0 0 44%;
+    text-align: center;
+}
+
+.card-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-left .count {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: .02em;
+    line-height: 1.15;
+}
+
+.card-left .supply {
+    font-size: .82rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: .02em;
+}
+
+.card-right {
+    flex: 1;
+    text-align: center;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.price-row .dollar {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.price-row .amount {
+    font-size: 4.2rem;
+    font-weight: 900;
+    line-height: .85;
+}
+
+.price-row .old-price {
+    font-size: .95rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #CC0000;
+    margin-right: 6px;
+    align-self: flex-end;
+    padding-bottom: 2px;
+}
+
+.best-offer .price-row .old-price { color: #ccc; }
+
+.sep {
+    border: none;
+    border-top: 2px dotted;
+    margin: 10px 0;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: .88rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.benefit i {
+    font-size: .85rem;
+    flex-shrink: 0;
+}
+
+.per-bottle-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: -2px;
+    opacity: 0.7;
+}
+
+.total-line {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    line-height: 1.6;
+}
+
+.total-line .old {
+    text-decoration: line-through;
+    color: #CC0000;
+    font-weight: 600;
+}
+
+.total-line .new {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.shipping-line {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    font-size: 1.55rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: #1a1a1a;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    letter-spacing: .04em;
+    font-family: 'Inter', Arial, sans-serif;
+    transition: filter .2s;
+}
+
+.buy-btn:hover { filter: brightness(1.05); }
+.buy-btn i { font-size: 1.15rem; }
+
+.buy-btn.gold {
+    background: linear-gradient(90deg, #F9933B 0%, #E52990 100%);
+    color: #fff;
+}
+
+/* Today with Jenna & Friends badge */
+.today-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.today-badge img {
+    height: 90px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.best-offer .card-left > img {
+    max-width: 80%;
+}
+
+.best-offer .buy-btn {
+    font-size: 1.75rem;
+    padding: 17px 20px;
+}
+
+.buy-btn.gray {
+    background: linear-gradient(90deg, #f5b87a 0%, #F9933B 100%);
+    color: #fff;
+}
+
+.buy-btn.dark-gray {
+    background: linear-gradient(90deg, #E52990 0%, #F9933B 100%);
+    color: #fff;
+}
+
+.best-offer .banner {
+    background: linear-gradient(90deg, #F9933B 0%, #E52990 100%);
+    text-align: center;
+    padding: 9px 16px;
+    font-size: 1.45rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+
+.best-offer .card-body {
+    background: linear-gradient(160deg, #fff5f9 0%, #fff 40%, #fff8f0 100%);
+}
+
+.best-offer .card-left .count {
+    color: #E52990;
+    font-size: 1.6rem;
+}
+.best-offer .card-left .supply { color: #F9933B; }
+.best-offer .price-row .dollar,
+.best-offer .price-row .amount {
+    background: linear-gradient(135deg, #F9933B 0%, #E52990 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.best-offer .per-bottle-label {
+    background: linear-gradient(135deg, #F9933B 0%, #E52990 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: .8;
+}
+.best-offer .sep { border-color: rgba(229, 41, 144, .2); }
+.best-offer .benefit { color: #444; }
+.best-offer .benefit i { color: #E52990; }
+.best-offer .benefit.save { color: #F9933B; font-size: .95rem; }
+.best-offer .benefit.save i { color: #F9933B; }
+.best-offer .total-line { color: #333; }
+.best-offer .total-line .old { color: #ccc; }
+.best-offer .total-line .new { color: #E52990; }
+.best-offer .shipping-line { color: #333; }
+.best-offer .shipping-line .hl { color: #F9933B; }
+
+.white-card .card-body { background: #fff; }
+
+.white-card .card-left .title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.white-card .card-left .count { color: #E52990; }
+.white-card .card-left .supply { color: #F9933B; }
+.white-card .price-row .dollar,
+.white-card .price-row .amount {
+    background: linear-gradient(135deg, #E52990 0%, #F9933B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.white-card .per-bottle-label {
+    background: linear-gradient(135deg, #E52990 0%, #F9933B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: .7;
+}
+.white-card .sep { border-color: rgba(229, 41, 144, .15); }
+.white-card .benefit { color: #444; }
+.white-card .benefit i { color: #E52990; }
+.white-card .benefit.save { color: #F9933B; }
+.white-card .benefit.save i { color: #F9933B; }
+.white-card .total-line { color: #333; }
+.white-card .total-line .new { color: #E52990; }
+.white-card .shipping-line { color: #333; }
+.white-card .shipping-line .hl { color: #F9933B; }
+
+@media(min-width: 768px) {
+    .bottles-section {
+        flex-direction: row;
+        max-width: 1100px;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .bottle-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottle-card:nth-child(1) { order: 2; }
+    .bottle-card:nth-child(2) { order: 3; }
+    .bottle-card:nth-child(3) { order: 1; }
+
+    .card-body {
+        flex-direction: column;
+        flex: 1;
+        padding: 16px 14px;
+    }
+
+    .card-left { flex: none; width: 100%; }
+    .card-left img { max-width: 70%; margin: 0 auto; }
+    .today-badge img { max-width: none; height: 75px; }
+    .best-offer .card-left > img { max-width: 60%; }
+    .best-offer .buy-btn { font-size: 1.35rem; padding: 14px 14px; }
+    .card-right { width: 100%; }
+    .price-row .amount { font-size: 2.8rem; }
+    .price-row .dollar { font-size: 1.3rem; }
+
+    .buy-btn {
+        font-size: 1.15rem;
+        padding: 12px 14px;
+        margin-top: auto;
+    }
+
+    .benefit { font-size: .78rem; }
+    .total-line { font-size: .92rem; }
+    .shipping-line { font-size: .88rem; }
+}
+
+@media(max-width:420px) {
+    .card-body { gap: 10px; padding: 16px 14px; }
+    .price-row .amount { font-size: 2.8rem; }
+    .price-row .dollar { font-size: 1.3rem; }
+    .card-left .count { font-size: 1.25rem; }
+    .benefit { font-size: .78rem; }
+    .total-line { font-size: .88rem; }
+    .total-line .new { font-size: 1rem; }
+    .shipping-line { font-size: .85rem; }
+    .buy-btn { font-size: 1.3rem; padding: 13px 16px; }
+}
+
+/* ========== GUARANTEE SECTION ========== */
+.guarantee-section {
+    background-color: #f4f7f9;
+    padding: 60px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+.guarantee-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.guarantee-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a2a4b;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.guarantee-title .red-highlight {
+    color: #c9302c;
+}
+
+.guarantee-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.guarantee-text p {
+    margin-bottom: 20px;
+}
+
+.guarantee-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.guarantee-badge {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.guarantee-badge img {
+    width: 100%;
+    height: auto;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.trust-badges img {
+    height: 50px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .guarantee-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .guarantee-badge {
+        width: 150px;
+    }
+
+    .guarantee-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .guarantee-title {
+        font-size: 2rem;
+    }
+}
